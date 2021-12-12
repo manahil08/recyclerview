@@ -23,4 +23,6 @@ public class MainActivity extends RecyclerView.Adapter<myRecyclerViewAdapter.MyV
         textViewdateFriend = itemView.findViewById(R.id.textViewDate);
         textViewCity = itemView.findViewById(R.id.textViewCity);
     }
+
+    
 }
