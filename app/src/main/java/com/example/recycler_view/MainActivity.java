@@ -1,14 +1,14 @@
 package com.example.recycler_view;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends RecyclerView.Adapter<myRecyclerViewAdapter.MyViewHolder> {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        public myRecyclerViewAdapter(List<Friends> friendsList) {
+            this.friendsList = friendsList;
     }
 }
